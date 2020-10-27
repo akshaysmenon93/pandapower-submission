@@ -1,0 +1,77 @@
+.blog {
+	padding: 2rem;
+}
+
+.back{
+	color: $color-black;
+	text-decoration: none;
+}
+
+.comments {
+	margin: 4rem auto;
+	text-align: justify;
+	&__separator {
+		border-top: 4px solid $color-grey-dark;
+	}
+
+	&__body {
+		padding: 2rem;
+	}
+
+	&__main {
+		padding: 1rem;
+	}
+
+	&__date{
+		font-size: 1rem;
+		margin-left: 1rem;
+	}
+
+	&__user-icon {
+		font-size: 3rem;
+		margin-right: 1rem;
+	}
+
+	&__sub {
+		margin: 1.5rem 0 1.5rem 10rem;
+
+		@include media-breakpoint-down(md) {
+			margin: 1.5rem 0 1.5rem 5rem;
+		}
+	}
+
+	&__sub-comment {
+		margin: 1.5rem auto;
+	}
+
+	
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-input {
+	font-size: $default-font-size;
+}
+
+.form-text-area {
+	min-height: 20rem;
+}
+
+.form-error {
+	font-size: 1.3rem;
+	color: $color-error;
+}
+
+.button-primary {
+	background-color: $color-primary-light;
+	height: 4rem;
+	width: 7rem;
+	font-size: $default-font-size;
+
+	&:hover {
+		background-color: $color-primary-dark;
+	}
+}

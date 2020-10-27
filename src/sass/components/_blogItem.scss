@@ -1,0 +1,51 @@
+.blog-list {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@include media-breakpoint-down(md) {
+			padding: 0;
+	}
+}
+
+.blog-card {
+	margin: 1rem;
+	text-align: justify;
+	&__body {
+		padding: 1rem;
+	}
+
+	&__title {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin: 1.5rem auto;
+		text-align: center;
+	}
+
+	&__content {
+		display: inline-block;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 3rem;
+	}
+
+	&__footer-data {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__footer-link {
+		margin-right: 2rem;
+
+		@include media-breakpoint-down(md) {
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+
+## Please not that I have used the blog slug as the url param while routing from the blog listing page to the
+individual blog page. This has been done to comply with SEO friendly urls. 
+
+## The current problem with this approach is that, if you directly try to access the blogpost with th url
+'localhost:3000/blogs/blog-post-1' it will return an error. This error has been handled by an error boundary. The error
+screen produced by react will not be shown in a production build. 
+
+## To be able to display the blog by directly accessing the url, necessary changes have to be made to fetch a 
+blog by its slug using an API. 

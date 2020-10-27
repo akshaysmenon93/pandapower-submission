@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; //=> 1rem = 10px.
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: $default-font-size;
+	line-height: 1.7;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($color-primary-light, 0.8),
+		rgba($color-primary-dark, 0.8)
+	);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main {
+	background-color: $color-white;
+	padding: 0px;
+	margin: 3rem auto;
+	min-height: 95vh;
+
+	@include media-breakpoint-down(md) {
+		margin: 0 !important;
+		max-width: 100% !important;
+	}
+
+	&:after {
+		@include media-breakpoint-down(md) {
+			margin: 0 !important;
+			margin-right: 0;
+		}
+	}
+}
+
+.container {
+	@include media-breakpoint-down(md) {
+		margin: 0 !important;
+	}
+}
